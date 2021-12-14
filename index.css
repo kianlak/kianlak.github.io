@@ -28,4 +28,7 @@
 /*White box for navigation bar logo*/
 .white-box {
     background-color: white;
+    height: 50px;
+    width: 50px;
+    padding: 15px;
 }
