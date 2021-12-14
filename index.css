@@ -4,35 +4,3 @@
     font-family: 'Arial';
     background-color: #e2e195;
 }
-
-/*Navigation bar*/
-.navbar {   
-    background: #181818;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    position: sticky;
-    justify-content: left;
-    z-index: 999;
-}
-
-/*Navigation bar text*/
-.navbar-text {
-    font-size: 1.5rem;
-    color: white;
-    font-weight: 600;
-    margin: 0px 15px;
-    text-decoration: none;
-}
-
-/*White box for navigation bar logo*/
-.white-box {
-    background-color: white;
-    height: 50px;
-    width: 50px;
-}
-
-.image-resizing {
-    width: 50%;
-    height: 50%;
-}
