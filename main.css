@@ -1,0 +1,25 @@
+/*Document Body*/
+.container {
+    margin: 0;
+    font-family: 'Arial';
+    background-color: #e2e195;
+}
+
+/*Navigation Bar*/
+.navbar {   
+    background: #181818;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    justify-content: left;
+    z-index: 999;
+}
+
+/*Navigation Bar Text*/
+.navbar-text {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 600;
+    margin: 0px 15px;
+}
