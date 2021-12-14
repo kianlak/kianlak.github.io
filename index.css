@@ -1,11 +1,11 @@
-/*Document Body*/
+/*Document body*/
 .container {
     margin: 0;
     font-family: 'Arial';
     background-color: #e2e195;
 }
 
-/*Navigation Bar*/
+/*Navigation bar*/
 .navbar {   
     background: #181818;
     height: 70px;
@@ -16,10 +16,16 @@
     z-index: 999;
 }
 
-/*Navigation Bar Text*/
+/*Navigation bar text*/
 .navbar-text {
     font-size: 1.5rem;
     color: white;
     font-weight: 600;
     margin: 0px 15px;
+    text-decoration: none;
+}
+
+/*White box for navigation bar logo*/
+.white-box {
+    background-color: white;
 }
