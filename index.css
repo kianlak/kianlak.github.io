@@ -1,13 +1,13 @@
 .body-container {
     margin: 0;
     font-family: Consolas, monaco, monospace;
-    background-color: #e2e195;
+    background-color: #441C55;
 }
 
 /*Navigation Bar*/
 .navbar {
-    background: #131313;
-    height: 80px;
+    background: #743282;
+    height: 80px;   
     display: flex;
     font-size: 1.2rem;
     position: sticky;
@@ -31,11 +31,11 @@
 }
 
 .navbar-text {
-    color: white;
+    color: #DC9200;
     font-size: 1.5rem;
 }
 
-.rounded-brand {
+.rounded-brand-container {
     border-radius: 25px;
     background: white;
     padding: 15px;
