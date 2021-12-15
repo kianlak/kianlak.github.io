@@ -38,9 +38,10 @@
 .rounded-brand-container {
     border-radius: 25px;
     background: white;
-    padding: 15px;
+    padding: 20px;
     width: 25px;
     height: 25px;
+    justify-content: center;
 }
 
 .brand {
