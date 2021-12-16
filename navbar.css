@@ -1,7 +1,7 @@
 /*Navigation Bar*/
 .navbar {
     background: #2d233d;
-    height: 80px;   
+    height: 85px;   
     display: flex;
     font-size: 1.2rem;
     position: sticky;
@@ -9,47 +9,44 @@
     z-index: 999;   
 }
 
-/**/
+/*Navigation Bar Container*/
 .navbar-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
     z-index: 1;
     width: 100%;
     padding-left: 1rem;
 }  
 
-/**/
-.navbar-options {
-    display: flex;
-    list-style: none;
-
-}
-
-/**/
-.navbar-content {
-    padding: 1rem;
-}
-
-/**/
-.navbar-text {
-    color: #d4bf9b;
-    font-size: 1.5rem;
-}
-
-/**/
+/*Rounded Brand Container*/
 .rounded-brand-container {
     border-radius: 10px;
     background: white;
     padding: 15px;
     width: 25px;
-    height: 32.5px;
+    height: 30px;
     justify-content: center;
 }
 
-/**/
+/*Brand Image Format*/
 .brand {
     width: 100%;
     object-fit: cover;
+}
+
+/*Navigation Bar Options*/
+.navbar-options {
+    display: flex;
+    list-style: none;
+}
+/*Content For Navigation Bar*/
+.navbar-content {
+    padding: 1rem;
+}
+
+/*Navigation Bar Text*/
+.navbar-text {
+    color: #d4bf9b;
+    font-size: 1.5rem;
 }

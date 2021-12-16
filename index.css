@@ -1,5 +1,6 @@
+/*Body Container*/
 .body-container {
     margin: 0;
-    font-family: Consolas, monaco, monospace;
+    font-family: system-ui;
     background-color: #d4d4d4;
 }
