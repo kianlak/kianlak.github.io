@@ -1,6 +1,6 @@
 /*Navigation Bar*/
 .navbar {
-    background: #2d233d;
+    background: #2D233D;
     height: 85px;   
     display: flex;
     font-size: 1.2rem;
@@ -22,7 +22,7 @@
 /*Rounded Brand Container*/
 .rounded-brand-container {
     border-radius: 10px;
-    background: white;
+    background: #FFFFFF;
     padding: 15px;
     width: 25px;
     height: 30px;
@@ -47,6 +47,6 @@
 
 /*Navigation Bar Text*/
 .navbar-text {
-    color: #d4bf9b;
+    color: #D4BF9B;
     font-size: 1.5rem;
 }
