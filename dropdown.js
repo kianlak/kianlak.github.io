@@ -3,11 +3,12 @@ const navSlide = () => {
     const nav = document.querySelector('.nav-link');
     const navLink = document.querySelectorAll('.nav-link li');
 
+    //When dropdown is clicked
     dropdown.addEventListener('click', () => {
         //Toggle Nav
         nav.classList.toggle('nav-active');
 
-        //Animate Links
+        //Animate links
         navLink.forEach((link, index) => {
             if(link.style.animation)
             {

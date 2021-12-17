@@ -1,0 +1,13 @@
+/*========================
+      About Me Section
+========================*/
+/*About Me Container*/
+.about-me-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-top: 4em;
+    width: 75%;
+    height: auto;
+    border-radius: 12.5px;
+}
