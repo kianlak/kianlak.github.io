@@ -10,4 +10,17 @@
     width: 75%;
     height: auto;
     border-radius: 12.5px;
+    margin-right: 20%;
+}
+
+.about-me-container h1 {
+    padding: 1% 2.5%;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 710) {
+    .about-me-container h1 {
+        padding: 1% 2.5%;
+        font-size: 1px !important;
+    }
 }
