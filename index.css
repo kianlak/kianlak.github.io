@@ -1,4 +1,7 @@
 /*Body Container*/
 .body-container {
-    background-color: #33343B;
+    background-image: linear-gradient(115deg, #77C9D4, #57BC90);
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
 }

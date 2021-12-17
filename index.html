@@ -22,24 +22,29 @@
     <body class="body-container"> <!-- Document Body -->
         <noscript>Please allow scripts to view the contents of this website</noscript>
 
-        <header class="navbar-header"> <!-- Navigation Bar -->
-
-            <div class="logo-container" onclick="location.href='#body-container';"> <!-- Logo for Navigation Bar -->
+        <nav> <!-- Navigation Bar Content-->
+            <div class="logo"> <!-- Logo for Navigation Bar -->
                 <img class="logo" src="./Images/KL Logo.png" alt="KL Logo"/>
             </div>
 
-            <nav class="navbar"> <!-- Navigation Bar Content-->
-                <ul class="navbar-list">
-                    <li><a href="">About Me</a></li>
-                    <li><a href="">Resume</a></li>
-                    <li><a href="">Projects</a></li>
-                    <li><a href="https://github.com/kianlak" target="_blank">Github</a></li>
-                    <li><a href="">In Progress</a></li>
-                </ul>
-            </nav>
-            <a><button>Contact</button></a> <!-- Contact Button -->
+            <a class="my-name">Kian Lak</a>
+            
+            <ul class="nav-link"> <!-- Navigation Bar Content -->
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Resume</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="https://github.com/kianlak" target="_blank">Github</a></li>
+                <li><a href="#">In Progress</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
 
-        </header>
+            <div class="dropdown"> <!-- Mobile Dropdown Symbol -->
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
         
+        <script src="app.js"></script>
     </body>
 </html>
