@@ -12,6 +12,7 @@ nav {
     background-color: #FFFFFF;
 }
 
+/*Content For The Navigation Bar*/
 .nav-link {
     display: flex;
     justify-content: space-around;
@@ -70,6 +71,7 @@ nav {
         justify-content: center;
     }
 
+    /*Sets Up Content For Dropdown*/
     .nav-link {
         position: absolute;
         right: 0px;
@@ -84,16 +86,19 @@ nav {
         background-color: #FFFFFF;
     }
 
+    /*Removes Contents On Navigation Bar*/
     .nav-link li {
        opacity: 0;
     }
 
+    /*Page Filler For Mobile*/
     .my-name {
         display: block;
         font-weight: bold;
         z-index: 1;
     }
 
+    /*Displays Dropdown*/
     .dropdown {
         display: block;
     }
@@ -104,19 +109,19 @@ nav {
     transform: translateY(0%);
 }
 
-/*Animation Script*/
+/*Animation Script For Content*/
 @keyframes navLinkFadeIn {
     from {
         opacity: 0;
-        transform: translateY(50px);
+        transform: translateX(50px);
     }
     to {
         opacity: 1;
-        transform: translateY(0px);
+        transform: translateX(0px);
     }
 }
 
-/*Dropdown Symbol*/
+/*Dropdown Animation*/
 .toggle .line1 {
     transform: rotate(-45deg) translate(-5px, 6px);
 }
