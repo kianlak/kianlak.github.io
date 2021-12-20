@@ -1,26 +1,16 @@
-/*========================
-      About Me Section
-========================*/
-/*About Me Container*/
-.about-me-container {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    margin-top: 4em;
-    width: 75%;
-    height: auto;
-    border-radius: 12.5px;
-    margin-right: 20%;
+.about-me {
+    display: inline-block;
 }
 
-.about-me-container h1 {
-    padding: 1% 2.5%;
-    font-size: 12px;
+.about-me-text {
+
 }
 
-@media screen and (max-width: 710) {
-    .about-me-container h1 {
-        padding: 1% 2.5%;
-        font-size: 1px !important;
-    }
+.about-me-text h1, p{
+    width: 0;
+    min-width: 10rem;
+}
+
+.my-image {
+    width: 20%;
 }

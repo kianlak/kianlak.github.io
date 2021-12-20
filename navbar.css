@@ -34,7 +34,6 @@ nav {
 
 /*Logo*/
 .logo {
-    margin-right: auto;
     width: auto;
     height: fit-content;
     z-index: 1;
@@ -49,8 +48,7 @@ nav {
     color: #015249;
     letter-spacing: 3px;
     font-weight: bold;
-    font-size: 30px;
-    margin-right: 32.5%;
+    font-size: 1.5rem;
 }
 
 /*Dropdown*/
@@ -70,7 +68,7 @@ nav {
 /*Special Adjustments*/
 @media screen and (max-width: 710px) {
     nav {    
-        justify-content: center;
+        justify-content: space-between;
     }
 
     /*Sets Up Content For Dropdown*/
