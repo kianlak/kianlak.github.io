@@ -1,16 +1,63 @@
 .about-me {
-    display: inline-block;
-}
-
-.about-me-text {
-
-}
-
-.about-me-text h1, p{
-    width: 0;
-    min-width: 10rem;
+    height: auto;
+    display: block;
+    z-index: -1;
 }
 
 .my-image {
-    width: 20%;
+    width: 20vw;
+    max-width: 300px;
+    margin-top: 30px;
+    height: auto;
+    border-radius: 50%;
+    float: right;
+    position: sticky;
+}
+
+.about-me-white-container {
+    background-color: white;
+    border-radius: 25px;
+    max-width: 90%;
+    max-height: auto;
+}
+
+.about-me-text {
+    padding: 1rem;
+}
+
+.about-me-text h1 {
+    color: #015249;
+    display: block;
+}
+
+.about-me-text p {
+    font-size: 15.5px;
+    display: block;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+
+.skillset-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.skillset-col {
+    flex: 1;
+}
+
+.skillset-col h2 {
+    margin: 1rem;
+}
+
+.skillset-col li {
+    font-size: 17px;
+}
+
+/*Special Adjustments*/
+@media screen and (max-width: 710px) {
+    .my-image {
+        min-width: 40%;
+    }
 }

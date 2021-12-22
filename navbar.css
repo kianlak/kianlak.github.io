@@ -6,7 +6,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 9vh;
+    min-height: 7vh;
     padding: 0.5% 0.5%;
     background-color: #FFFFFF;
 }
@@ -24,7 +24,7 @@ nav {
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 14.5px;
     transition: all 0.4s ease 0s;
 }
 
@@ -75,8 +75,8 @@ nav {
     .nav-link {
         position: absolute;
         right: 0px;
-        height: 91vh;
-        top: 7vh;
+        height: 92vh;
+        top: 6vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -114,7 +114,9 @@ nav {
     to { opacity: 1; transform: translateX(0px); }
 }
 
-/*Dropdown Animation*/
+/*===============================
+    Dropdown Toggle Animation
+===============================*/
 .toggle .line1 {
     transform: rotate(-45deg) translate(-5px, 6px);
 }
