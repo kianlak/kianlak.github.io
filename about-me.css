@@ -10,8 +10,6 @@
     margin-top: 30px;
     height: auto;
     border-radius: 50%;
-    float: right;
-    position: sticky;
 }
 
 .about-me-white-container {
@@ -21,20 +19,20 @@
     max-height: auto;
 }
 
-.about-me-text {
+.welcome {
     padding: 1rem;
 }
 
-.about-me-text h1 {
+.welcome h1 {
     color: #015249;
     display: block;
 }
 
-.about-me-text p {
+.welcome p {
     font-size: 15.5px;
     display: block;
     letter-spacing: 1px;
-    line-height: 20px;
+    line-height: 25px;
 }
 
 .skillset-row {
@@ -44,7 +42,7 @@
 }
 
 .skillset-col {
-    flex: 1;
+    flex: 1 0 0;
 }
 
 .skillset-col h2 {
@@ -53,6 +51,7 @@
 
 .skillset-col li {
     font-size: 17px;
+    line-height: 25px;
 }
 
 /*Special Adjustments*/

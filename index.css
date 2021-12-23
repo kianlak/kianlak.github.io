@@ -1,6 +1,6 @@
 /*Body Container*/
 .body-container {
-    background-image: linear-gradient(270deg, #dfeef0, #f1f1f1);
+    background-image: linear-gradient(270deg, #DFEEF0, #F1F1F1);
     margin: 0px;
     padding: 0px;
     height: 100%;
@@ -9,9 +9,8 @@
 
 /*Showcase*/
 .showcase {
-    display: flex;
     margin-left: auto;
     margin-right: auto;
-    max-width: 95%;
-    padding: 2rem;
+    z-index: -1;
+    padding: 5rem 10rem 0 10rem;
 }
