@@ -15,8 +15,13 @@
     padding: 5rem 5rem 0 5rem;
 }
 
+/*Jump between site*/
+html {
+    scroll-behavior: smooth;
+}
+
 @media screen and (max-width: 710px) {
     .showcase {
-        padding: 5rem 0rem 0 1rem;
+        padding: 5rem 1rem 0 1rem;
     }
 }

@@ -1,9 +1,14 @@
+/*========================
+    About Me Section
+========================*/
+/*General Layout*/
 .about-me {
     height: auto;
     display: block;
     z-index: -1;
 }
 
+/*My Image*/
 .my-image {
     width: 20vw;
     max-width: 300px;
@@ -12,52 +17,125 @@
     float: right;
 }
 
+/*Container Holding all information*/
 .about-me-white-container {
     background-color: white;
     border-radius: 25px;
-    max-width: 90%;
     max-height: auto;
 }
 
-.welcome {
+/*Container Holding all the Content*/
+.about-me-content {
     padding: 1rem;
 }
 
-.welcome h1 {
+/*Welcome*/
+.about-me-content h1 {
     color: #015249;
     display: block;
 }
 
-.welcome p {
+/*Introduction*/
+.about-me-content p {
     font-size: 15.5px;
     display: block;
     letter-spacing: 1px;
     line-height: 25px;
 }
 
-.skillset-row {
+/*===============
+    Skill Set
+===============*/
+/*Skill Set Row*/
+.skill-set-row {
     display: flex;
     flex-wrap: wrap;
     padding: 1rem;
 }
 
-.skillset-col {
+/*Skill Set Column*/
+.skill-set-col {
     flex: 1;
 }
 
-.skillset-col h2 {
+/*Categories*/
+.skill-set-col h2 {
     margin: 1rem;
 }
 
-.skillset-col li {
+/*Listed Information*/
+.skill-set-col li {
     font-size: 1rem;
     line-height: 25px;
 }
 
+/*================
+    Experience
+================*/
+/*General Experience Layout*/
+.experience {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 2rem;
+}
+
+/*Dividing Experiences*/
+.experience-div {
+    width: 50%;
+}
+
+/*Company and position*/
+.experience h2 {
+    font-size: 22px;
+    color: #5281b1;
+}
+
+/*Timeframe and Projects*/
+.experience h3 h4 {
+    margin-left: 0.5rem;
+    font-size: 18px;
+}
+
+/*Project Descriptions*/
+.experience li {
+    padding: 0.5rem;
+}
+
+/*===============
+    Education
+===============*/
+/*General Education Layout*/
+.education {
+    margin-left: 2rem;
+}
+
+/*Education Information Layout*/
+.education div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Education Information Spacing*/
+.education h4 {
+    margin-right: 2rem;
+}
+
+/*University Name*/
+.education h2 {
+    font-size: 28px;
+    color: #c98937;
+}
+
 /*Special Adjustments*/
 @media screen and (max-width: 710px) {
+    /*Mobile Image Size Fix*/
     .my-image {
         min-width: 65%;
-        padding: 3rem;
+        padding: 5rem;
+    }
+
+    /*Experience Mobile Format Fix*/
+    .experience-div {
+        width: 100%;
     }
 }

@@ -8,7 +8,7 @@ const navSlide = () => {
         //Toggle Navigaton Bar
         nav.classList.toggle('nav-active');
 
-        //Animate links
+        //Links Animation
         navLink.forEach((link, index) => {
             if(link.style.animation)
             {
@@ -23,7 +23,6 @@ const navSlide = () => {
         //Dropdown Animation
         dropdown.classList.toggle('toggle');
     });
-
 }
 
 navSlide();

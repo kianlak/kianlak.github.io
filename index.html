@@ -30,8 +30,8 @@
             
             <!-- Navigation Bar Content -->
             <ul class="nav-link">
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Resume</a></li>
+                <li><a href="#about-me-id">About Me</a></li>
+                <li><a href="#resume-id">Resume</a></li>
                 <li><a href="#">Projects</a></li>
                 <li><a href="#">In Progress</a></li>
                 <li><a href="https://github.com/kianlak" target="_blank">Github</a></li>
@@ -51,44 +51,59 @@
 
         <!--=== Showcase ===-->
         <div class="showcase">
+
             <!--=== About Me ===-->
-            <div class="about-me">
-                
+            <div class="about-me" id="about-me-id">
                 <div class="about-me-white-container">
-                    <div class="welcome">
-                        <div style="display: inline; justify-content: center;">
+                    <div class="about-me-content">
+
+                        <!--=== Welcome ===-->
+                        <div>
                             <h1>Welcome</h1>
                             <img class="my-image" src="./Images/Kian Lak.jpg" alt="Kian Lak"/>
+                            
+                            <!-- Introduction -->
                             <p>
                                 My name is Kian Lak and I am currently a junior 
                                 enrolled in the University of Texas at Dallas 
-                                pursuing my B.S. in Computer Science. I want to
-                                work towards making a product people. My interests lie in Full Stack 
-                                development but I am open to anything new thrown 
-                                my way.
+                                pursuing my B.S. in Computer Science.  I started
+                                programming in high school and took an interest
+                                to the field during this time in hopes to hone
+                                my skills and eventually make a product that 
+                                people will . My interests lie in Full Stack 
+                                development but I am open to expanding my skill set.
                             </p>
                             <hr/>
                         </div>
-                        <h1 style="margin-bottom: 0;">Skillset</h1>
-                        <div class="skillset-row">
-                            <div class="skillset-col">
+
+                        <!--=== Skill Set ===-->
+                        <h1 style="margin-bottom: 0;">Skill Set</h1>
+                        <div class="skill-set-row">
+
+                            <!-- Languages-->
+                            <div class="skill-set-col">
                                 <h2>Languages</h2>
                                 <ul>
                                     <li>Java</li>
                                     <li>C/C++</li>
                                     <li>HTML/CSS</li>
                                     <li>Javascript</li>
+                                    <li>TypeScript</li>
                                 </ul>
                             </div>
-                            <div class="skillset-col">
+
+                            <!-- Technologies -->
+                            <div class="skill-set-col">
                                 <h2>Technologies</h2>
                                 <ul>
                                     <li>React</li>
                                     <li>Git/Github</li>
                                 </ul>
                             </div>
-                            <div class="skillset-col">
-                                <h2>Softwares</h2>
+
+                            <!-- Software -->
+                            <div class="skill-set-col">
+                                <h2>Software</h2>
                                 <ul>
                                     <li>Windows</li>
                                     <li>Linux/Unix</li>
@@ -96,8 +111,88 @@
                                 </ul>
                             </div>
                         </div>
+                        <hr/>
+
+                        <!--=== Experience ===-->
+                        <h1>Experience</h1>
+                        <div class="experience">
+
+                            <!-- Zeal IT Consultants -->
+                            <div class="experience-div">
+                                <h2>Zeal IT Consultants | Software Engineering Intern</h2>
+                                <h3>May 2021 - August 2021</h3>
+
+                                <h4>Virtual Investigator</h4>
+                                <ul>
+                                    <li>
+                                        Developed the back end for the private chat
+                                        feature with implementation of the Socket.IO 
+                                        client library using React
+                                    </li>
+
+                                    <li>
+                                        Developed the front end for the transcript
+                                        and the private chat features
+                                    </li>
+                                </ul>
+
+                                <h4>SpotiFinder</h4>
+                                <ul>
+                                    <li>
+                                        Set up the SpotifyAPI to retrieve JSON data
+                                        for searched tracks
+                                    </li>
+
+                                    <li>
+                                        Developed the front end for the search filter,
+                                        results, and home screen
+                                    </li>
+
+                                    <li>
+                                        Developed an algorithm to determine which tracks
+                                        from a playlist fit the users search criteria
+                                        and ordered the tracks in order of relevance
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- TBD -->
+                            <div class="experience-div">
+                                <h2>Any future experience | Position</h2>
+                                <h3>Date: From - To</h3>
+
+                                <h4>Project/Work</h4>
+                                <ul>
+                                   <!-- Description of Contribution -->
+                                </ul>
+                            </div>
+
+                        </div>
+                        <hr/>
+
+                        <!--=== Education ===-->
+                        <h1>Education</h1>
+                        <div class="education">
+                            <h2>University of Texas at Dallas</h2>
+                            <div>
+                                <h4>Computer Science Major</h3>
+                                <h4>Class of 2023</h4>
+                                <h4>GPA: 3.717</h4>
+                            </div>
+                            <h3>Relevant Classes</h3>
+                            <p>Discrete Math l & ll, Computer Architecture, 
+                                Computer Science l & ll, C/C++ Programming
+                                in a Unix Environemnt, Advanced Algorithm 
+                                Design & Analysis, Programming Language 
+                                Paradigms, Software Engineering
+                            </p>
+                        </div>
                     </div>
                 </div>
+            </div>
+
+            <div class="resume" id="resume-id">
+
             </div>
         </div>
     </body>
