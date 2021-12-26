@@ -6,6 +6,7 @@
     height: auto;
     display: block;
     z-index: -1;
+    margin: 5rem 5rem 8rem 5rem;
 }
 
 /*My Image*/
@@ -128,6 +129,12 @@
 
 /*Special Adjustments*/
 @media screen and (max-width: 710px) {
+
+    /*Contains Body of the White Container*/
+    .about-me {
+        margin: 5rem 1rem 5rem 1rem;
+    }
+
     /*Mobile Image Size Fix*/
     .my-image {
         min-width: 65%;
