@@ -1,0 +1,92 @@
+/*=====================
+    Project Spacing
+=====================*/
+/*Contains everything in projects*/
+.projects {
+    height: auto;
+    margin-top: 5rem;
+    background-color: white;
+}
+
+.projects h1 {
+    color: #015249;
+    display: block;
+    padding: 1rem;
+    padding-left: 6rem;
+}
+
+.projects p {
+    font-size: 18px;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+
+/*Holds all the projects content*/
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 8rem;
+}
+
+/*The project text*/
+.project-text {
+    padding-top: 1.5%;
+    width: 45%;
+}
+
+/*The project image preview container*/
+.project-image-container {
+    margin-bottom: 3rem;
+    height: auto;
+    width: 45%;
+}
+
+.project-image-container img {
+    width: 100%;
+    transition: .3s ease;
+    transform: translateY(5%);
+}
+
+.project-image-container:hover img {
+    opacity: 0.5;
+    height: auto;
+    transition: .3s ease;
+    transform: translateY(-5%);
+}
+
+/*Special Adjustments*/
+@media screen and (max-width: 710px) {
+    /*Fixes Heading Spacing*/
+    .projects h1 {
+        padding-left: 2rem;
+    }
+
+    /*Sets content from 50-50 on each side to a top bottom*/
+    .projects-container {
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding: 0rem 1rem 0rem 1rem;
+    }
+
+    /*====================
+        Fixing Spacing
+    ====================*/
+    .project-content {
+        width: 100%;
+    }
+
+    .project-text {
+        width: 100%;
+    }
+
+    .project-image-container img {
+        width: 100%;
+        margin-right: 0rem;
+    }
+
+    .project-image-container {
+        margin-right: 0rem;
+        width: 100%;
+    }
+}
