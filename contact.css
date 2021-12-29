@@ -1,0 +1,44 @@
+/*=============
+    Contant
+=============*/
+/*Holds everything for the contact section*/
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: #015249;
+}
+
+.contact h1 {
+    font-size: 40px;
+    margin-top: 1rem;
+    color: white;
+}
+
+.contact p {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 2rem;
+    color: white;
+}
+
+.contact a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.contact button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+}

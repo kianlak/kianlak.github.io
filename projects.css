@@ -58,7 +58,7 @@
 @media screen and (max-width: 710px) {
     /*Fixes Heading Spacing*/
     .projects h1 {
-        padding-left: 2rem;
+        padding-left: 1rem;
     }
 
     /*Sets content from 50-50 on each side to a top bottom*/
