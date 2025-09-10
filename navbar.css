@@ -1,131 +1,110 @@
 /*======================
-    Navigation Bar
+    Navigation Bar (no CSS vars)
 ======================*/
-/*Navigation Bar*/
 nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 7vh;
-    padding: 0.5% 0.5%;
-    position: sticky;
-    background-color: #FFFFFF;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 64px;
+  padding: 0.5rem 1rem;
+  background: rgba(230, 238, 255, 0.90); /* slightly darker blue-tinted */
+  backdrop-filter: saturate(1.3) blur(10px);
+  -webkit-backdrop-filter: saturate(1.3) blur(10px);
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
 }
 
-/*Content For The Navigation Bar*/
+.logo { height: 36px; width: auto; display: block; }
+
+/* Desktop links */
 .nav-link {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1 1 auto;
+  gap: clamp(0.6rem, 1vw, 1.2rem);
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 1rem;
 }
 
 .nav-link a {
-    color: #015249;
-    text-decoration: none;
-    letter-spacing: 3px;
-    font-weight: bold;
-    font-size: 14.5px;
-    transition: all 0.4s ease 0s;
+  color: #0f172a;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.4rem 0.6rem;
+  border-radius: 10px;
+  transition: color .2s ease, background .2s ease, opacity .2s ease;
 }
 
 .nav-link a:hover {
-    color: #A5A5AF;
+  color: #3b82f6;
+  background: rgba(239, 246, 255, 0.7);
 }
 
-/*Logo*/
-.logo {
-    width: auto;
-    height: fit-content;
-    z-index: 1;
-}
-
-/*======================
-    Mobile Styling
-======================*/
-/*Kian Lak*/
+/* Kian Lak title (mobile) */
 .my-name {
-    display: none;
-    color: #015249;
-    letter-spacing: 3px;
-    font-weight: bold;
-    font-size: 1.5rem;
+  display: none;
+  color: #0f172a;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 1.2rem;
 }
 
-/*Dropdown*/
-.dropdown {
-    display: none;
-    cursor: pointer;
-}
-
+/* Dropdown (hamburger) */
+.dropdown { display: none; cursor: pointer; }
 .dropdown div {
-    width: 25px;
-    height: 3px;
-    background-color: #015249;
-    margin: 5px;
-    transition: all 0.3s ease;
+  width: 26px; height: 3px; background-color: #0f172a;
+  margin: 5px; border-radius: 2px; transition: all 0.3s ease;
 }
 
-/*Special Adjustments*/
+/* Mobile */
 @media screen and (max-width: 710px) {
-    nav {    
-        justify-content: space-between;
-    }
+  nav { justify-content: space-between; }
 
-    /*Sets Up Content For Dropdown*/
-    .nav-link {
-        position: absolute;
-        right: 0px;
-        height: 92vh;
-        top: 6vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        transform: translateY(-150%);
-        transition: transform 0.4s ease-in;
-        background-color: #FFFFFF;
-    }
+  .nav-link {
+    position: absolute;
+    inset: 64px 0 auto 0; /* top, right, bottom, left */
+    height: calc(100vh - 64px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 1.25rem;
+    background: #ffffff;
+    border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+    transform: translateY(-120%);
+    transition: transform 0.35s ease-in;
+  }
 
-    /*Removes Contents On Navigation Bar*/
-    .nav-link li {
-       opacity: 0;
-    }
+  .nav-link li { opacity: 0; }
 
-    /*Page Filler For Mobile*/
-    .my-name {
-        display: block;
-        font-weight: bold;
-        z-index: 1;
-    }
+  .my-name { display: block; font-weight: 800; }
 
-    /*Displays Dropdown*/
-    .dropdown {
-        display: block;
-    }
+  .dropdown { display: block; }
 }
 
-/*Active Mobile Dropdown*/
-.nav-active {
-    transform: translateY(0%);
+/* Active mobile dropdown */
+.nav-active { transform: translateY(0%); }
+
+/* Add subtle shadow when page is scrolled */
+nav.scrolled {
+  background: rgba(230, 238, 255, 0.96);
+  box-shadow: 0 6px 20px rgba(2, 6, 23, 0.08);
 }
 
-/*Animation Script For Content*/
+/* Fade-in animation for links */
 @keyframes navLinkFadeIn {
-    from { opacity: 0; transform: translateX(50px); }
-    to { opacity: 1; transform: translateX(0px); }
+  from { opacity: 0; transform: translateY(-6px); }
+  to { opacity: 1; transform: translateY(0px); }
 }
 
-/*===============================
-    Dropdown Toggle Animation
-===============================*/
-.toggle .line1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.toggle .line2 {
-    opacity: 0;
-}
-
-.toggle .line3 {
-    transform: rotate(45deg) translate(-5px, -6px);
-}
+/* Dropdown toggle animation */
+.toggle .line1 { transform: rotate(-45deg) translate(-5px, 6px); }
+.toggle .line2 { opacity: 0; }
+.toggle .line3 { transform: rotate(45deg) translate(-5px, -6px); }

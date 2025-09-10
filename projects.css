@@ -1,92 +1,72 @@
 /*=====================
-    Project Spacing
+    Projects (no CSS vars)
 =====================*/
-/*Contains everything in projects*/
 .projects {
-    height: auto;
-    margin-top: 5rem;
-    background-color: white;
+  height: auto;
+  margin-top: 4rem;
+  background: transparent;
 }
 
 .projects h1 {
-    color: #015249;
-    display: block;
-    padding: 1rem;
-    padding-left: 6rem;
+  color: #0f172a;
+  padding: 0 1rem;
+  margin: 0 0 1rem 0;
 }
 
 .projects p {
-    font-size: 18px;
-    word-spacing: 3px;
-    letter-spacing: 1px;
+  font-size: 1rem;
+  word-spacing: 1px;
+  letter-spacing: 0.2px;
 }
 
-/*Holds all the projects content*/
+/* Card container for a single project pair */
 .projects-container {
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 8rem;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1rem 1rem;
+  margin: 1.25rem auto 2rem auto;
+  max-width: 1100px;
+  background: #edf3ff; /* slightly darker blue-tinted white */
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 14px;
+  box-shadow: 0 1px 2px rgba(2, 6, 23, 0.06), 0 1px 1px rgba(2, 6, 23, 0.04);
+  transition: transform .2s ease, box-shadow .2s ease;
 }
+.projects-container:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(2, 6, 23, 0.08); }
 
-/*The project text*/
-.project-text {
-    padding-top: 1.5%;
-    width: 45%;
-}
+/* The project text */
+.project-text { padding-top: 0; width: 100%; }
+.project-text h2 { margin: 0 0 0.25rem 0; }
+.project-text h2 a img { vertical-align: middle; }
 
-/*The project image preview container*/
-.project-image-container {
-    margin-bottom: 3rem;
-    height: auto;
-    width: 45%;
-}
-
+/* The project image preview container */
+.project-image-container { margin: 0; height: auto; width: 100%; position: relative; overflow: hidden; }
 .project-image-container img {
-    width: 100%;
-    transition: .3s ease;
-    transform: translateY(5%);
+  width: 100%; height: auto; border-radius: calc(14px - 6px);
+  transition: .3s ease; transform: translateY(0%);
+  border: 1px solid rgba(15, 23, 42, 0.08);
 }
+.project-image-container:hover img { opacity: 0.9; transform: translateY(-2%); }
 
-.project-image-container:hover img {
-    opacity: 0.5;
-    height: auto;
-    transition: .3s ease;
-    transform: translateY(-5%);
+/* Subtle overlay CTA on hover */
+.project-image-container::after {
+  content: "View";
+  position: absolute;
+  left: 50%; top: 50%; transform: translate(-50%, calc(-50% + 8px));
+  padding: 0.35rem 0.7rem;
+  font-size: 0.9rem; color: #1f2937; background: rgba(230,238,255,0.92);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 999px;
+  opacity: 0; transition: opacity .25s ease, transform .25s ease;
 }
+.project-image-container:hover::after { opacity: 1; transform: translate(-50%, -50%); }
 
-/*Special Adjustments*/
+/* Mobile */
 @media screen and (max-width: 710px) {
-    /*Fixes Heading Spacing*/
-    .projects h1 {
-        padding-left: 1rem;
-    }
-
-    /*Sets content from 50-50 on each side to a top bottom*/
-    .projects-container {
-        align-items: center;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        padding: 0rem 1rem 0rem 1rem;
-    }
-
-    /*====================
-        Fixing Spacing
-    ====================*/
-    .project-content {
-        width: 100%;
-    }
-
-    .project-text {
-        width: 100%;
-    }
-
-    .project-image-container img {
-        width: 100%;
-        margin-right: 0rem;
-    }
-
-    .project-image-container {
-        margin-right: 0rem;
-        width: 100%;
-    }
+  .projects h1 { padding-left: 1rem; }
+  .projects-container { grid-template-columns: 1fr; padding: 1rem; border-radius: 14px; }
+  .project-text, .project-image-container { width: 100%; }
+  .project-image-container img { width: 100%; margin-right: 0; }
 }

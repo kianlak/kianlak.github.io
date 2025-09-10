@@ -1,28 +1,39 @@
-const navSlide = () => {
-    const dropdown = document.querySelector('.dropdown');
-    const nav = document.querySelector('.nav-link');
-    const navLink = document.querySelectorAll('.nav-link li');
+const navEnhancements = () => {
+  const dropdown = document.querySelector('.dropdown');
+  const navLinksContainer = document.querySelector('.nav-link');
+  const navLinks = document.querySelectorAll('.nav-link li');
+  const navBar = document.querySelector('nav');
 
-    //When dropdown is clicked
+  if (dropdown && navLinksContainer) {
     dropdown.addEventListener('click', () => {
-        //Toggle Navigaton Bar
-        nav.classList.toggle('nav-active');
+      // Toggle mobile menu
+      navLinksContainer.classList.toggle('nav-active');
 
-        //Links Animation
-        navLink.forEach((link, index) => {
-            if(link.style.animation)
-            {
-                link.style.animation ='';
-            }
-            else
-            {
-                link.style.animation = `navLinkFadeIn 0.5s ease forwards ${index / 7 + 0.5}s`;
-            }
-        });
+      // Links animation
+      navLinks.forEach((link, index) => {
+        if (link.style.animation) {
+          link.style.animation = '';
+        } else {
+          link.style.animation = `navLinkFadeIn 0.5s ease forwards ${index / 7 + 0.5}s`;
+        }
+      });
 
-        //Dropdown Animation
-        dropdown.classList.toggle('toggle');
+      // Hamburger animation
+      dropdown.classList.toggle('toggle');
     });
-}
+  }
 
-navSlide();
+  // Add scrolled class for shadow/opaque background
+  const onScroll = () => {
+    if (!navBar) return;
+    if (window.scrollY > 8) {
+      navBar.classList.add('scrolled');
+    } else {
+      navBar.classList.remove('scrolled');
+    }
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll(); // initialize on load
+};
+
+navEnhancements();

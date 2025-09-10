@@ -1,148 +1,84 @@
 /*========================
-    About Me Section
+    About Me Section (no CSS vars)
 ========================*/
-/*General Layout*/
-.about-me {
-    height: auto;
-    display: block;
-    z-index: -1;
-    margin: 5rem 5rem 8rem 5rem;
-}
+.about-me { margin: 5rem auto 6rem auto; }
 
-/*My Image*/
-.my-image {
-    width: 20vw;
-    max-width: 300px;
-    height: auto;
-    border-radius: 50%;
-    float: right;
-}
-
-/*Container Holding all information*/
 .about-me-white-container {
-    background-color: white;
-    border-radius: 25px;
-    max-height: auto;
+  background-color: #edf3ff; /* slightly darker blue-tinted white */
+  border-radius: 14px;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 1px 2px rgba(2, 6, 23, 0.06), 0 1px 1px rgba(2, 6, 23, 0.04);
 }
 
-/*Container Holding all the Content*/
-.about-me-content {
-    padding: 1rem;
+.about-me-content { padding: clamp(1rem, 2vw, 1.5rem); }
+
+/* Welcome */
+.about-me-content h1 { color: #0f172a; }
+
+/* Intro layout: text + image */
+.my-image {
+  width: min(280px, 38vw);
+  height: auto;
+  border-radius: 50%;
+  float: right;
+  margin: 0 0 0.75rem 1rem;
+  box-shadow: 0 1px 2px rgba(2, 6, 23, 0.06), 0 1px 1px rgba(2, 6, 23, 0.04);
 }
 
-/*Welcome*/
-.about-me-content h1 {
-    color: #015249;
-    display: block;
-}
-
-/*Introduction*/
 .about-me-content p {
-    font-size: 15.5px;
-    display: block;
-    letter-spacing: 1px;
-    line-height: 25px;
+  font-size: 1rem;
+  letter-spacing: 0.2px;
+  line-height: 1.8;
 }
 
 /*===============
     Skill Set
 ===============*/
-/*Skill Set Row*/
 .skill-set-row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  padding: 0.5rem 0.25rem;
 }
 
-/*Skill Set Column*/
-.skill-set-col {
-    flex: 1;
-}
-
-/*Categories*/
-.skill-set-col h2 {
-    margin: 1rem;
-}
-
-/*Listed Information*/
+.skill-set-col { flex: 1; }
+.skill-set-col h2 { margin: 0.5rem 0; color: #0f172a; font-size: 1.05rem; }
+.skill-set-col ul { list-style: none; padding-left: 0; margin: 0; }
 .skill-set-col li {
-    font-size: 1rem;
-    line-height: 25px;
+  display: inline-block;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #0f172a;
+  opacity: 0.95;
+  background: #e1ebff; /* slightly darker blue chip */
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 999px;
+  padding: 0.35rem 0.65rem;
+  margin: 0.25rem 0.35rem 0.25rem 0;
 }
 
 /*================
     Experience
 ================*/
-/*General Experience Layout*/
-.experience {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 2rem;
-}
-
-/*Dividing Experiences*/
-.experience-div {
-    width: 50%;
-}
-
-/*Company and position*/
-.experience h2 {
-    font-size: 22px;
-    color: #5281b1;
-}
-
-/*Timeframe and Projects*/
-.experience h3 h4 {
-    margin-left: 0.5rem;
-    font-size: 18px;
-}
-
-/*Project Descriptions*/
-.experience li {
-    padding: 0.5rem;
-}
+.experience { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-left: 0; }
+.experience-div { width: 100%; padding-right: 0.5rem; }
+.experience h2 { font-size: 1.1rem; color: #3b82f6; }
+.experience h3 { margin: 0.25rem 0; font-size: 0.95rem; color: #64748b; }
+.experience h4 { margin: 0 0 0.25rem 0; font-size: 0.95rem; color: #64748b; }
+.experience li { padding: 0.25rem 0; line-height: 1.6; }
 
 /*===============
     Education
 ===============*/
-/*General Education Layout*/
-.education {
-    margin-left: 2rem;
-}
+.education { margin: 0; }
+.education div { display: flex; flex-wrap: wrap; gap: 1rem; }
+.education h4 { margin: 0; color: #64748b; }
+.education h2 { font-size: 1.4rem; color: #c98937; }
 
-/*Education Information Layout*/
-.education div {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-/*Education Information Spacing*/
-.education h4 {
-    margin-right: 2rem;
-}
-
-/*University Name*/
-.education h2 {
-    font-size: 28px;
-    color: #c98937;
-}
-
-/*Special Adjustments*/
+/* Mobile tweaks */
 @media screen and (max-width: 710px) {
-
-    /*Contains Body of the White Container*/
-    .about-me {
-        margin: 5rem 1rem 5rem 1rem;
-    }
-
-    /*Mobile Image Size Fix*/
-    .my-image {
-        min-width: 65%;
-        padding: 5rem;
-    }
-
-    /*Experience Mobile Format Fix*/
-    .experience-div {
-        width: 100%;
-    }
+  .about-me { margin: 3rem 1rem 4rem 1rem; }
+  .my-image { min-width: 60%; padding: 1.25rem; }
+  .experience { grid-template-columns: 1fr; }
+  .skill-set-row { grid-template-columns: 1fr; }
 }
